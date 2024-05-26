@@ -1,0 +1,65 @@
+:root {
+    --main-color: white;
+    --secondary-color: #333333;
+    --main-text-color: white;
+    --button-hover-color: #cc5f00;
+    --header-name-color: #cc5f00;
+    --section-bg-color: #f9f9fB;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    padding-top: 120px; 
+}
+
+header {
+    position: fixed;
+    background: var(--secondary-color);
+    color: var(--header-name-color);
+    padding: 10px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#Header\ Name {
+    margin: 0;
+}
+
+#NavBar\ List {
+    padding: 0 30px 0 40px;
+}
+
+#NavBar\ Item {
+    display: inline;
+    margin: 25px;
+}
+
+#NavBar\ Item a {
+    color: var(--main-text-color);
+    padding: 4px 6px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#NavBar\ Item a:hover {
+    background: var(--button-hover-color);
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: var(--section-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
