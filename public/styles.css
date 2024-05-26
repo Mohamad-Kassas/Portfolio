@@ -13,11 +13,9 @@ body {
     margin: 0;
     color: var(--secondary-color);
     background-color: var(--main-color);
-    padding-top: 120px; 
 }
 
 header {
-    position: fixed;
     background: var(--secondary-color);
     color: var(--header-name-color);
     padding: 10px;
