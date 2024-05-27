@@ -29,43 +29,107 @@ header {
 }
 
 .header-name {
-    margin: 0;
+  margin: 0;
 }
 
 .navbar-list {
-    padding: 0 30px 0 40px;
+  padding: 0 30px 0 40px;
 }
 
 .navbar-item {
-    display: inline;
-    margin: 25px;
+  display: inline;
+  margin: 25px;
 }
 
 .navbar-item a {
-    color: var(--main-text-color);
-    padding: 4px 6px;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: background 0.3s;
+  color: var(--main-text-color);
+  padding: 4px 6px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 .navbar-item a:hover {
-    background: var(--button-hover-color);
+  background: var(--button-hover-color);
 }
 
 .portfolio-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: var(--section-bg-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: var(--section-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.resume-container {
+  padding: 40px;
+  background: var(--section-bg-color);
+  box-shadow: 0 0 4px var(--card-shadow-color);
+  border-radius: 8px;
+}
+
+.resume-title {
+  text-align: center;
+}
+
+.resume-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.resume-title a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume-title a:hover {
+  color: var(--header-name-color);
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section h2 {
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.resume-section-body p {
+  margin: 2px;
+}
+
+.resume-right-header {
+  float: right;
+}
+
+.resume-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.resume-list li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.resume-list li:before {
+  content: "•";
+  color: var(--secondary-color);
+  padding-right: 0.5em;
+}
+
+.skill-sub-subsection-title {
+  text-decoration: underline;
 }
 
 .projects-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -75,7 +139,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 0 4px var(--card-shadow-color);
   padding: 20px;
-  width: 45%;
+  width: 48%;
   box-sizing: border-box;
   position: relative;
 }
@@ -100,9 +164,10 @@ header {
 }
 
 .image-collage-mealer img {
-  width: 25%;
+  width: 39%;
   height: auto;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .project-card h3 {
@@ -110,8 +175,13 @@ header {
 }
 
 .project-card a {
-  color: var(--button-hover-color);
+  color: var(--secondary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: var(--header-name-color);
 }
 
 .project-card p {
@@ -128,69 +198,4 @@ header {
 
 .project-text {
   color: var(--card-shadow-color);
-}
-
-.resume-container {
-    padding: 40px;
-    background: var(--section-bg-color);
-    box-shadow: 0 0 4px var(--header-name-color);
-    border-radius: 8px;
-}
-
-.resume-title {
-    text-align: center;
-}
-
-.resume-title h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.resume-title a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.resume-title a:hover {
-    color: var(--header-name-color);
-}
-
-
-.resume-section {
-    margin-bottom: 20px;
-}
-
-.resume-section h2 {
-    border-bottom: 2px solid var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-.resume-section-body p {
-    margin: 2px;
-}
-
-.resume-right-header {
-    float: right;
-}
-
-.resume-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.resume-list li {
-    padding-left: 1em;
-    text-indent: -1em;
-}
-
-.resume-list li:before {
-    content: "•";
-    color: var(--secondary-color);
-    padding-right: 0.5em;
-}
-
-.skill-sub-subsection-title{
-    text-decoration: underline;
 }
