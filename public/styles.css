@@ -28,39 +28,38 @@ header {
   z-index: 100;
 }
 
-#Header\ Name {
-  margin: 0;
+.header-name {
+    margin: 0;
 }
 
-#NavBar\ List {
-  padding: 0 30px 0 40px;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.navbar-list {
+    padding: 0 30px 0 40px;
 }
 
-#NavBar\ Item {
-  margin: 0 15px;
+.navbar-item {
+    display: inline;
+    margin: 25px;
 }
 
-#NavBar\ Item a {
-  color: var(--main-text-color);
-  padding: 4px 6px;
-  border-radius: 15px;
-  text-decoration: none;
-  transition: background 0.3s;
+.navbar-item a {
+    color: var(--main-text-color);
+    padding: 4px 6px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-#NavBar\ Item a:hover {
-  background: var(--button-hover-color);
+.navbar-item a:hover {
+    background: var(--button-hover-color);
 }
 
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1200px;
-  background: var(--section-bg-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.portfolio-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: var(--section-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .projects-container {
@@ -129,4 +128,69 @@ section {
 
 .project-text {
   color: var(--card-shadow-color);
+}
+
+.resume-container {
+    padding: 40px;
+    background: var(--section-bg-color);
+    box-shadow: 0 0 4px var(--header-name-color);
+    border-radius: 8px;
+}
+
+.resume-title {
+    text-align: center;
+}
+
+.resume-title h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.resume-title a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resume-title a:hover {
+    color: var(--header-name-color);
+}
+
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.resume-section-body p {
+    margin: 2px;
+}
+
+.resume-right-header {
+    float: right;
+}
+
+.resume-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.resume-list li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.resume-list li:before {
+    content: "•";
+    color: var(--secondary-color);
+    padding-right: 0.5em;
+}
+
+.skill-sub-subsection-title{
+    text-decoration: underline;
 }
