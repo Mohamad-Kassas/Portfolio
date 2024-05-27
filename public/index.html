@@ -1,46 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamad Kassas - Personal Portfolio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mohamad Kassas - Personal Portfolio" />
+    <script
+      src="https://kit.fontawesome.com/6e345dd638.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Mohamad Kassas - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="Header Name">Mohamad Kassas</h1>
-        <nav id="NavBar">
-            <ul id="NavBar List">
-                <li id="NavBar Item"><a href="#about">About</a></li>
-                <li id="NavBar Item"><a href="#resume">Resume</a></li>
-                <li id="NavBar Item"><a href="#projects">Projects</a></li>
-                <li id="NavBar Item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 class="header-name">Mohamad Kassas</h1>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="#about">About</a></li>
+          <li class="navbar-item"><a href="#resume">Resume</a></li>
+          <li class="navbar-item"><a href="#projects">Projects</a></li>
+          <li class="navbar-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>TO DO</p>
+    <section class="portfolio-section" id="about">
+      <h2>About Me</h2>
+      <p>TO DO</p>
     </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>TO DO</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Mealer App</h3>
-            <p>TO DO</p>
+    <section class="portfolio-section" id="resume">
+      <h2>Resume</h2>
+      <div class="resume-container">
+        <div class="resume-title">
+          <h1>Mohamad Kassas</h1>
+          <p>
+            <a href="https://github.com/Mohamad-Kassas"
+              ><i class="fa-brands fa-github"></i> Mohamad-Kassas</a>
+            |
+            <a href="https://www.linkedin.com/in/mohamad-kassas-546653224/"
+              ><i class="fa-brands fa-linkedin"></i> Mohamad Kassas</a>
+            |
+            <a href="mailto:mr.mohamadkassas@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>
+              mr.mohamadkassas@gmail.com</a>
+            |
+            <a href="tel:+16136008337"
+              ><i class="fa-solid fa-mobile"></i> (613) 600-8337</a>
+          </p>
         </div>
+
+        <section class="resume-section">
+          <h2>Education</h2>
+          <div class="resume-section-body">
+            <p>
+              <strong>University of Ottawa</strong>
+              <span class="resume-right-header">2021 - 2025 (Expected)</span>
+            </p>
+            <p>
+              Joint BSc in <strong>Computer Science</strong> and
+              <strong>Mathematics</strong> (GPA: 9.46/10)
+            </p>
+            <ul class="resume-list">
+              <li>
+                Relevant coursework: Data Structures and Algorithms,
+                Introduction to Software Engineering, Introduction to Computing
+                I & II, Programming Paradigms, Databases, Methods of Machine
+                Learning
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Work Experience</h2>
+          <div class="resume-section-body">
+            <p>
+              <strong>Ford Motor Company of Canada</strong>
+              <span class="resume-right-header"
+                ><strong>Ottawa, ON, Canada</strong></span
+              >
+            </p>
+            <p>
+              <em>Software Developer Intern</em>
+              <span class="resume-right-header">January - April 2024</span>
+            </p>
+            <ul class="resume-list">
+              <li>
+                Led the development of the Setup Wizard feature for an
+                <strong>Android-based</strong> system, implementing multiple
+                interactive screens with a focus on optimal user experience and
+                adherence to best coding practices
+              </li>
+              <li>
+                Developed extensive <strong>unit tests</strong> across various
+                features using <strong>Robolectric</strong> to ensure code
+                reliability and functionality within a <strong>Java</strong> and
+                <strong>XML</strong>-based codebase
+              </li>
+              <li>
+                Conducted in-depth <strong>crash analysis</strong> and debugging
+                to identify and resolve critical system failures, significantly
+                enhancing application stability and performance
+              </li>
+            </ul>
+          </div>
+          <div class="resume-section-body">
+            <p>
+              <em>Software Developer Intern</em>
+              <span class="resume-right-header">May - August 2023</span>
+            </p>
+            <ul class="resume-list">
+              <li>
+                Contributed to the development of the
+                <strong>SYNC</strong> infotainment system for Ford vehicles
+                through software development using <strong>React</strong>,
+                <strong>Redux</strong>, <strong>JavaScript</strong>, and
+                <strong>TypeScript</strong>
+              </li>
+              <li>
+                Resolved over 20 debugging and development tasks, resulting in
+                improved reliability and user satisfaction
+              </li>
+              <li>
+                Enhanced team productivity and software quality by actively
+                engaging in <strong>15+ code reviews</strong> and collaborative
+                debugging sessions, promoting an environment of continuous
+                improvement and teamwork
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Projects</h2>
+          <div class="resume-section-body">
+            <p>
+              <strong>CMK Hotels</strong> |
+              <em>JavaScript, Next.js, HTML, CSS, MySQL</em>
+            </p>
+            <ul class="resume-list">
+              <li>
+                Led a team of three developers to build a hotel booking website
+                with a user <strong>authentication</strong> system, leveraging
+                technologies such as <strong>Next.js</strong> and
+                <strong>MySQL</strong> to create a <strong>dynamic</strong> user
+                experience
+              </li>
+              <li>
+                Designed a modern UI using <strong>CSS effects</strong> and
+                common design patterns
+              </li>
+            </ul>
+          </div>
+          <div class="resume-section-body">
+            <p>
+              <strong>Mighty Bites Android App</strong> |
+              <em>Java, XML, Firebase, JUnit, Android Studio</em>
+            </p>
+            <ul class="resume-list">
+              <li>
+                Collaborated with a <strong>team of five</strong> to design and
+                develop an app to connect customers with local chefs
+              </li>
+              <li>
+                Adopted a <strong>NoSQL database</strong> to store and fetch
+                user information using
+                <strong>Firebase Realtime Database</strong>
+              </li>
+              <li>
+                Automated testing and wrote test cases with
+                <strong>JUnit</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="resume-section-body">
+            <p>
+              <strong>Neural Network From Scratch</strong> |
+              <em>Python, NumPy, Manim - Work In Progress</em>
+            </p>
+            <ul class="resume-list">
+              <li>
+                Configurable neural network library designed for training and
+                deployment in <strong>real-world</strong> applications
+              </li>
+              <li>
+                Developed a <strong>visualization</strong> feature to render
+                videos of the network using the Manim library
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Skills</h2>
+          <div class="resume-section-body">
+            <p><strong>Technical Skills:</strong></p>
+            <p>
+              <span class="skill-sub-subsection-title">Languages:</span> Python,
+              Java, JavaScript, TypeScript, HTML, CSS, R, MySQL, XML
+            </p>
+            <p>
+              <span class="skill-sub-subsection-title"
+                >Other Technologies:</span
+              >
+              React, Redux, Next.js, Firebase, Git, GitHub, Jenkins, JUnit,
+              NumPy, Pandas
+            </p>
+            <p>
+              <span class="skill-sub-subsection-title">Platforms/IDEs:</span>
+              Visual Studio Code, Android Studio, PyCharm, Eclipse, Windows,
+              Linux Ubuntu
+            </p>
+          </div>
+          <div class="skills">
+            <p>
+              <strong>Soft Skills:</strong> Teamwork, Creative Thinking,
+              Problem-Solving, Attention to Detail
+            </p>
+            <p>
+              <strong>Languages:</strong> English (Native), French (Fluent),
+              Arabic (Native)
+            </p>
+          </div>
+        </section>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <section class="portfolio-section" id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Mealer App</h3>
         <p>TO DO</p>
+      </div>
     </section>
-</body>
+
+    <section class="portfolio-section" id="contact">
+      <h2>Contact</h2>
+      <p>TO DO</p>
+    </section>
+  </body>
 </html>
