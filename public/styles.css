@@ -1,63 +1,132 @@
 :root {
-    --main-color: white;
-    --secondary-color: #333333;
-    --main-text-color: white;
-    --button-hover-color: #cc5f00;
-    --header-name-color: #cc5f00;
-    --section-bg-color: #f9f9fB;
+  --main-color: white;
+  --secondary-color: #333333;
+  --main-text-color: white;
+  --button-hover-color: #cc5f00;
+  --header-name-color: #cc5f00;
+  --section-bg-color: #f9f9fb;
+  --card-bg-color: white;
+  --card-shadow-color: #cc5f00;
+  --card-border-color: #e0e0e0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    color: var(--secondary-color);
-    background-color: var(--main-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
 }
 
 header {
-    background: var(--secondary-color);
-    color: var(--header-name-color);
-    padding: 10px;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  background: var(--secondary-color);
+  color: var(--header-name-color);
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 #Header\ Name {
-    margin: 0;
+  margin: 0;
 }
 
 #NavBar\ List {
-    padding: 0 30px 0 40px;
+  padding: 0 30px 0 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 #NavBar\ Item {
-    display: inline;
-    margin: 25px;
+  margin: 0 15px;
 }
 
 #NavBar\ Item a {
-    color: var(--main-text-color);
-    padding: 4px 6px;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: background 0.3s;
+  color: var(--main-text-color);
+  padding: 4px 6px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 #NavBar\ Item a:hover {
-    background: var(--button-hover-color);
+  background: var(--button-hover-color);
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: var(--section-bg-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: var(--section-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    margin-bottom: 20px;
+.projects-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--card-shadow-color);
+  padding: 20px;
+  width: 45%;
+  box-sizing: border-box;
+  position: relative;
+}
+.image-collage-cmk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.image-collage-cmk img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.image-collage-mealer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.image-collage-mealer img {
+  width: 25%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.project-card a {
+  color: var(--button-hover-color);
+  text-decoration: none;
+}
+
+.project-card p {
+  color: var(--secondary-color);
+}
+
+.project-card ul {
+  padding-left: 20px;
+}
+
+.project-card li {
+  margin-bottom: 10px;
+}
+
+.project-text {
+  color: var(--card-shadow-color);
 }
