@@ -199,3 +199,13 @@ header {
 .project-text {
   color: var(--card-shadow-color);
 }
+
+.contact-items a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-items a:hover {
+  color: var(--header-name-color);
+}
