@@ -143,16 +143,17 @@ header {
   box-sizing: border-box;
   position: relative;
 }
-.image-collage-cmk {
+.image-collage-yatzy {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   margin-bottom: 50px;
 }
 
-.image-collage-cmk img {
-  width: 100%;
-  height: auto;
+.image-collage-yatzy img {
+  width: 30vh;
+  height: 15vh;
   border-radius: 15px;
   margin-bottom: 15px;
 }
