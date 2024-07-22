@@ -143,7 +143,7 @@ header {
   box-sizing: border-box;
   position: relative;
 }
-.image-collage-yatzy {
+.image-collage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,22 +151,9 @@ header {
   margin-bottom: 50px;
 }
 
-.image-collage-yatzy img {
+.image-collage img {
   width: 30vh;
   height: 15vh;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-.image-collage-mealer {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-
-.image-collage-mealer img {
-  width: 39%;
-  height: auto;
   border-radius: 15px;
   margin-bottom: 15px;
 }
