@@ -2,6 +2,8 @@
 ### Deliverable for Assignment 1
 Portfolio website developed with HTML and CSS including a resume and projects with technical and visual information
 
+Please access portfolio via the link: https://mohamad-kassas.github.io/Portfolio/public/index.html
+
 &nbsp;
 
 Group 41 Members:
